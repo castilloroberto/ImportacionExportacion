@@ -34,10 +34,6 @@ namespace ImportacionExportacion
             this.btn_ingresar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_busqueda = new System.Windows.Forms.TextBox();
-            this.cb_categorias = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +43,10 @@ namespace ImportacionExportacion
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_busqueda = new System.Windows.Forms.TextBox();
+            this.cb_categorias = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +97,7 @@ namespace ImportacionExportacion
             // 
             this.dgvProductos.AllowUserToAddRows = false;
             this.dgvProductos.AllowUserToDeleteRows = false;
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -108,6 +109,7 @@ namespace ImportacionExportacion
             this.Column7,
             this.Column8,
             this.Column9});
+            this.dgvProductos.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvProductos.Location = new System.Drawing.Point(383, 225);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
@@ -115,44 +117,6 @@ namespace ImportacionExportacion
             this.dgvProductos.RowTemplate.Height = 24;
             this.dgvProductos.Size = new System.Drawing.Size(695, 378);
             this.dgvProductos.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(717, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 28);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Busqueda";
-            // 
-            // txt_busqueda
-            // 
-            this.txt_busqueda.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busqueda.Location = new System.Drawing.Point(818, 171);
-            this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(260, 34);
-            this.txt_busqueda.TabIndex = 1;
-            this.txt_busqueda.TextChanged += new System.EventHandler(this.txt_busqueda_TextChanged);
-            // 
-            // cb_categorias
-            // 
-            this.cb_categorias.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_categorias.FormattingEnabled = true;
-            this.cb_categorias.Location = new System.Drawing.Point(383, 176);
-            this.cb_categorias.Name = "cb_categorias";
-            this.cb_categorias.Size = new System.Drawing.Size(255, 36);
-            this.cb_categorias.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(378, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 28);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Categorias";
             // 
             // Column1
             // 
@@ -234,6 +198,44 @@ namespace ImportacionExportacion
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             this.Column9.Width = 125;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(717, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 28);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Busqueda";
+            // 
+            // txt_busqueda
+            // 
+            this.txt_busqueda.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busqueda.Location = new System.Drawing.Point(818, 171);
+            this.txt_busqueda.Name = "txt_busqueda";
+            this.txt_busqueda.Size = new System.Drawing.Size(260, 34);
+            this.txt_busqueda.TabIndex = 1;
+            this.txt_busqueda.TextChanged += new System.EventHandler(this.txt_busqueda_TextChanged);
+            // 
+            // cb_categorias
+            // 
+            this.cb_categorias.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_categorias.FormattingEnabled = true;
+            this.cb_categorias.Location = new System.Drawing.Point(383, 176);
+            this.cb_categorias.Name = "cb_categorias";
+            this.cb_categorias.Size = new System.Drawing.Size(255, 36);
+            this.cb_categorias.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(378, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 28);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Categorias";
             // 
             // ImportacionExportacion
             // 
