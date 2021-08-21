@@ -18,7 +18,7 @@ namespace Main.Controller
 
         public Usuarios Login(string NombreUsuario, string Clave)
         {
-            using (var db = conexion)
+            using (var db = GetConexion)
             {
 
                 var res = db.Query<Usuarios>(sql,new { NombreUsuario,  Clave });

@@ -11,7 +11,7 @@ namespace Main.Controller
     {
         private static string server = "localhost\\SQLEXPRESS";
         private string cadena = $"Server={server};Database=SistemasIDB;Trusted_Connection=True;";
-        protected SqlConnection conexion => new SqlConnection(cadena);
+        protected SqlConnection GetConexion => new SqlConnection(cadena);
 
     }
 }

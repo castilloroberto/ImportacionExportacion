@@ -1,7 +1,7 @@
 ﻿
-namespace ImportacionExportacion
+namespace Main.Views
 {
-    partial class Excel
+    partial class Usuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,35 @@ namespace ImportacionExportacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgv_usuarios = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.SuspendLayout();
             // 
-            // Excel
+            // dgv_usuarios
+            // 
+            this.dgv_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_usuarios.Location = new System.Drawing.Point(169, 237);
+            this.dgv_usuarios.Name = "dgv_usuarios";
+            this.dgv_usuarios.RowHeadersWidth = 51;
+            this.dgv_usuarios.RowTemplate.Height = 24;
+            this.dgv_usuarios.Size = new System.Drawing.Size(673, 314);
+            this.dgv_usuarios.TabIndex = 0;
+            // 
+            // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 716);
-            this.Name = "Excel";
-            this.Text = "Excel";
+            this.ClientSize = new System.Drawing.Size(1119, 664);
+            this.Controls.Add(this.dgv_usuarios);
+            this.Name = "Usuarios";
+            this.Text = "Usuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgv_usuarios;
     }
 }

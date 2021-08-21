@@ -15,7 +15,7 @@ namespace Main
 
         public IEnumerable<Productos> GetProductos()
         {
-            using (var db = conexion)
+            using (var db = GetConexion)
             {
 
                 return db.Query<Productos>("sp_productos");

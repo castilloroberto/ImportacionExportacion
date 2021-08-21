@@ -12,7 +12,7 @@ namespace Main.Controller
     {
         public IEnumerable<Categorias> GetCategorias()
         {
-            using (var db = conexion)
+            using (var db = GetConexion)
             {
                 return db.Query<Categorias>("Select * from categorias");
             }
@@ -20,7 +20,7 @@ namespace Main.Controller
 
         public bool InsertCategoria(string categoria)
         {
-            using (var db = conexion)
+            using (var db = GetConexion)
             {
                 return db.Execute("sp_insertCategoria @NOMBRECAT", new { NOMBRECAT=categoria }) > 0;
             }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ImportacionExportacion
+namespace Main
 {
-    public partial class Excel : Form
+    public partial class Menu : Form
     {
-        public Excel()
+        public Menu()
         {
             InitializeComponent();
         }
